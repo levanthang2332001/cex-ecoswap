@@ -12,7 +12,7 @@ if (typeof window !== 'undefined') {
 }
 
 const getEthereumContract = () => {
-  const provider = new ethers.providers.Web3Provider(ethereum)
+  const provider = new ethers.providers.Web3Provider(eth)
   const signer = provider.getSigner()
   const transactionContract = new ethers.Contract(
     contractAddress,
